@@ -34,8 +34,11 @@
             background-color: #f7fcf9;
             scroll-behavior: smooth;
         }
-
+        .imptext{
+            font-size: 24px;
+        }
         
+
         #hero-section {
             background-image: url("C:\Users\suyas\Downloads\agri1.jpg");
             background-size: cover;
@@ -86,19 +89,19 @@
 </head>
 <body>
 
-    <header class="sticky top-0 z-50 bg-white shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <header class="sticky top-0 z-50 bg-white shadow-lg " style="height:96px">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-18 py-9 flex justify-between items-center">
             <div class="text-3xl font-extrabold text-agri-dark flex items-center">
-                <i class="fa-solid fa-tractor mr-3 text-agri-green animate-pulse"></i> <a href="index.html">FarmSync</a>
+                <i class="fa-solid fa-tractor mr-3 text-agri-green animate-pulse" style="position:absolute; left:48px;"></i> <a href="index.html" style="position:absolute; left:80px; font-size:36px;">FarmSync</a>
             </div>
-            <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
-                <a href="#features" class="hover:text-agri-green transition duration-300">Features</a>
-                <a href="#ai-advisor" class="hover:text-agri-green transition duration-300">AI Advisor</a>
-                <a href="#weather" class="hover:text-agri-green transition duration-300">Weather</a>
-                <a href="#market" class="hover:text-agri-green transition duration-300">Market</a>
-                <a href="#schemes" class="hover:text-agri-green transition duration-300">Schemes</a>
+            <nav class="headtext hidden md:flex space-x-16 text-gray-700 font-awesome"style="position:relative; right:112px;">
+                <a href="#features" class="imptext hover:text-agri-green transition duration-300">Features</a>
+                <a href="#ai-advisor" class="imptext hover:text-agri-green transition duration-300">AI Advisor</a>
+                <a href="#weather" class="imptext hover:text-agri-green transition duration-300">Weather</a>
+                <a href="#market" class="imptext hover:text-agri-green transition duration-300">Market</a>
+                <a href="#schemes" class="imptext hover:text-agri-green transition duration-300">Schemes</a>
             </nav>
-            <a href="login.html" target=_main" class="bg-agri-green text-white px-6 py-2 rounded-full font-semibold hover:bg-agri-dark transition duration-300 shadow-xl hidden sm:block">
+            <a href="login.html" target=_main" class="log bg-agri-green text-white px-6 py-2 rounded-full font-semibold hover:bg-agri-dark transition duration-300 shadow-xl hidden sm:block" style="position:absolute; right:32px; height:40px;width: 96px; font-size: 20px; text-align: center;">
                 LOGIN 
             </a>
         </div>
