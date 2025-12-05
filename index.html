@@ -34,8 +34,11 @@
             background-color: #f7fcf9;
             scroll-behavior: smooth;
         }
-
+        .imptext{
+            font-size: 24px;
+        }
         
+
         #hero-section {
             background-image: url("C:\Users\suyas\Downloads\agri1.jpg");
             background-size: cover;
@@ -55,6 +58,42 @@
             box-shadow: 0 25px 50px -12px rgba(76, 175, 80, 0.5);
         }
 
+      .howItHelps{
+        position:relative;
+        height:512px;
+        background-color: #D5ECD5;
+        
+      }
+      .farmer_smiling{
+        position:relative;
+        bottom:56px;
+        left:256px;
+        height:384px;
+        width:576px;
+      }
+      #heading{
+        /* background-color: beige; */
+        height:128px;
+        width:800px;
+        position: relative;
+        left:88px;
+        top:64px;
+        font-size: 64px;
+        font-family:sans-serif;
+      }
+      #advantage{
+        height:256px;
+        width:768px;
+        font-size:24px;
+        position:relative;
+        top:64px;
+        left:128px;
+        color:rgb(8, 19, 6);
+        font-weight: 500;
+        /* background-color: bisque; */
+        text-decoration: solid;
+        font-family:sans-serif;
+      }
         
         .scroll-reveal {
             opacity: 0;
@@ -86,19 +125,19 @@
 </head>
 <body>
 
-    <header class="sticky top-0 z-50 bg-white shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <header class="sticky top-0 z-50 bg-white shadow-lg " style="height:96px">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-18 py-9 flex justify-between items-center">
             <div class="text-3xl font-extrabold text-agri-dark flex items-center">
-                <i class="fa-solid fa-tractor mr-3 text-agri-green animate-pulse"></i> <a href="index.html">FarmSync</a>
+                <i class="fa-solid fa-tractor mr-3 text-agri-green animate-pulse" style="position:absolute; left:48px;"></i> <a href="index.html" style="position:absolute; left:80px; font-size:36px;">FarmSync</a>
             </div>
-            <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
-                <a href="#features" class="hover:text-agri-green transition duration-300">Features</a>
-                <a href="#ai-advisor" class="hover:text-agri-green transition duration-300">AI Advisor</a>
-                <a href="#weather" class="hover:text-agri-green transition duration-300">Weather</a>
-                <a href="#market" class="hover:text-agri-green transition duration-300">Market</a>
-                <a href="#schemes" class="hover:text-agri-green transition duration-300">Schemes</a>
+            <nav class="headtext hidden md:flex space-x-16 text-gray-700 font-awesome"style="position:relative; right:112px;">
+                <a href="#features" class="imptext hover:text-agri-green transition duration-300">Features</a>
+                <a href="#ai-advisor" class="imptext hover:text-agri-green transition duration-300">AI Advisor</a>
+                <a href="#weather" class="imptext hover:text-agri-green transition duration-300">Weather</a>
+                <a href="#market" class="imptext hover:text-agri-green transition duration-300">Market</a>
+                <a href="#schemes" class="imptext hover:text-agri-green transition duration-300">Schemes</a>
             </nav>
-            <a href="login.html" target=_main" class="bg-agri-green text-white px-6 py-2 rounded-full font-semibold hover:bg-agri-dark transition duration-300 shadow-xl hidden sm:block">
+            <a href="login.html" target=_main" class="log bg-agri-green text-white px-6 py-2 rounded-full font-semibold hover:bg-agri-dark transition duration-300 shadow-xl hidden sm:block" style="position:absolute; right:32px; height:40px;width: 96px; font-size: 20px; text-align: center;">
                 LOGIN 
             </a>
         </div>
@@ -120,13 +159,18 @@
                 </a>
             </div>
         </div>
-        
-        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 lg:left-auto lg:right-16 z-20">
-        <img src="C:\Users\suyas\Documents\black box\codes\farmer1.webp" alt="Smiling farmer" class="rounded-t-2xl shadow-2xl border-4 border-agri-light transition-all duration-700 ease-in-out hover:shadow-agri-green/50 hover:border-agri-sun">
-        </div>
     </section>
 
-   
+    <section class="howItHelps">
+           <p id="heading">Welcome to Farmsync</p>
+           <p id="advantage"><h style="font-size: 48px;">W</h>here technology meets trust.
+           We’re here to support every farmer with smarter tools, clearer guidance and reliable information. From quick disease detection to daily market prices, from weather alerts to the right government schemes, FarmSync keeps you prepared, confident and in control.
+           A better harvest starts with the right help and we’re proud to put that power in your hands.</p>
+           <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 lg:left-auto lg:right-16 z-20">
+        <img src="farmer1.webp" style="background-size:cover" alt="Smiling farmer" class="farmer_smiling rounded-t-2xl shadow-2xl border-4 border-agri-light transition-all duration-700 ease-in-out hover:shadow-agri-green/50 hover:border-agri-sun">
+        </div>  
+    </section>
+
     <section id="features" class="py-24 bg-agri-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-extrabold text-center text-agri-dark mb-4 scroll-reveal">
